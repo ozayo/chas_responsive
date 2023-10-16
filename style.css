@@ -342,6 +342,19 @@ img.icon {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem; /* 48.8px */
+    line-height: 2.9rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.7rem; /* 31.2px */
+  }
   .catboxes {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -396,11 +409,11 @@ img.icon {
     gap: 10px;
     padding-bottom: 20px;
     transition: all 0.3s;
-    transform: translateX(100%);
+    opacity: 0;
   }
   .mobilmenu:hover nav {
     visibility: visible;
-    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
@@ -438,9 +451,4 @@ img.icon {
   .catboxes {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  ...;
 }
