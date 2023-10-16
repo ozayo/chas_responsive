@@ -358,6 +358,9 @@ img.icon {
   .catboxes {
     grid-template-columns: repeat(1, 1fr);
   }
+  .section {
+    padding: 40px 20px;
+  }
   .section1 {
     grid-template-columns: 1fr;
   }
@@ -414,6 +417,12 @@ img.icon {
   .mobilmenu:hover nav {
     visibility: visible;
     opacity: 1;
+  }
+  a.primary {
+    padding: 10px 20px;
+  }
+  a.secondary {
+    padding: 9px 20px;
   }
 }
 
