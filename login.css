@@ -1,0 +1,128 @@
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section.login {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+.section.login .left {
+  background-image: url(images/pexels-septimiu-lupea-669015.jpeg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  border-radius: 20px;
+}
+.formcontainer {
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+}
+.formbox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button {
+  background-color: #9c27b0;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.infotext {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 12px;
+  color: #494949;
+}
+.infotext a {
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #9c27b0;
+}
+/* Form style*/
+.formbox form {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 15px;
+}
+input,
+.signup .message textarea {
+  width: 100%;
+  border: solid 1px #c2c2c2;
+  border-radius: 5px;
+  height: 40px;
+  padding: 5px;
+}
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.signup .formbox form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.signup .subbutton {
+  grid-column: span 2;
+}
+.signup .subbutton button {
+  width: 100%;
+}
+.signup .message {
+  grid-column: span 2;
+}
+.signup .message textarea {
+  min-height: 90px;
+}
+.edu input {
+  width: inherit;
+  height: auto;
+}
+.edu div,
+.selectbox div {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.edu p,
+.selectbox p {
+  font-size: 15px;
+}
+.edu {
+  margin-top: 5px;
+  grid-column: span 2;
+}
+.signup .selectbox {
+  grid-column: span 2;
+}
+.selectbox input {
+  width: 20px;
+  height: 15px;
+}
+.signup .favbrand {
+  grid-column: span 2;
+}
+.favbrand label {
+  display: block;
+}
+.favbrand select {
+  width: 200px;
+  height: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .section.login {
+    grid-template-columns: 1fr;
+    grid-template-rows: 245px auto;
+  }
+}

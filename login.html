@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chas form test - Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headercontainer">
+        <!-- <h1>Kattsidan</h1> -->
+        <div class="logo">
+          <a href="index.html"><img src="images/black-153956.svg" /></a>
+        </div>
+        <div class="mobilmenu">
+          <div class="mobicon"><img src="images/bars-solid.svg" /></div>
+          <nav>
+            <a href="index.html">Start</a>
+            <a href="katter.html">Katter</a>
+            <a href="kattgalleri.html">Kattgalleri</a>
+            <a href="om-oss.html">Om oss</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a class="login" href="login.html">Logga in</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="section login">
+          <div class="left">
+            <h2>Logga in</h2>
+          </div>
+          <div class="right">
+            <div class="formcontainer">
+              <h3>Logga in</h3>
+              <div class="formbox">
+                <form action="https://httpbin.org/anything" method="post">
+                  <div class="userName">
+                    <label for="username">Username</label>
+                    <input
+                      id="username"
+                      name="username"
+                      type="text"
+                      placeholder="Username"
+                      required
+                    />
+                  </div>
+                  <div class="password">
+                    <label for="pass">Password</label>
+                    <input
+                      id="pass"
+                      name="password"
+                      type="password"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                  <button type="submit">Skicka</button>
+                </form>
+              </div>
+              <div class="infotext">
+                <a href="./forget.html">Forgot Password?</a>
+                <p>New? <a href="./signup.html">Signup</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>&copy; 2023 Kattsidan</footer>
+  </body>
+</html>

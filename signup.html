@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chas form test - Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headercontainer">
+        <!-- <h1>Kattsidan</h1> -->
+        <div class="logo">
+          <a href="index.html"><img src="images/black-153956.svg" /></a>
+        </div>
+        <div class="mobilmenu">
+          <div class="mobicon"><img src="images/bars-solid.svg" /></div>
+          <nav>
+            <a href="index.html">Start</a>
+            <a href="katter.html">Katter</a>
+            <a href="kattgalleri.html">Kattgalleri</a>
+            <a href="om-oss.html">Om oss</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a class="login" href="login.html">Logga in</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="section signup">
+          <div class="right">
+            <div class="formcontainer">
+              <h3>Bli medlem</h3>
+              <div class="formbox">
+                <form action="https://httpbin.org/anything" method="post">
+                  <div class="name">
+                    <label for="name">Name</label>
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      placeholder="First name"
+                      required
+                    />
+                  </div>
+                  <div class="surname">
+                    <label for="surname">Surname</label>
+                    <input
+                      id="surname"
+                      name="surname"
+                      type="text"
+                      placeholder="Surname"
+                      required
+                    />
+                  </div>
+                  <div class="email">
+                    <label for="email">Your email</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="text"
+                      placeholder="yourname@chasacademy.se"
+                      required
+                    />
+                  </div>
+                  <div class="password">
+                    <label for="pass">Password</label>
+                    <input
+                      id="pass"
+                      name="password"
+                      type="password"
+                      placeholder="*****"
+                      required
+                    />
+                  </div>
+                  <div class="edu">
+                    <p>Har du en katt hemma?:</p>
+                    <div>
+                      <input
+                        type="radio"
+                        id="fmw"
+                        name="chas_edu"
+                        value="fmw23"
+                      />
+                      <label for="fmw">Ja</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        id="uxui"
+                        name="chas_edu"
+                        value="uxui"
+                      />
+                      <label for="uxui">Nej</label>
+                    </div>
+                  </div>
+                  <div class="message">
+                    <label for="msg">Message</label>
+                    <textarea
+                      id="msg"
+                      name="message"
+                      type="text"
+                      placeholder="Your message.."
+                    ></textarea>
+                  </div>
+                  <div class="subbutton">
+                    <button type="submit">Skicka</button>
+                  </div>
+                </form>
+              </div>
+              <div class="infotext">
+                <a href="./forget.html">Forgot Password?</a>
+                <p>Alreay have an account? <a href="./login.html">Login</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>&copy; 2023 Kattsidan</footer>
+  </body>
+</html>
