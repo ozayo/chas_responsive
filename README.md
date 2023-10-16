@@ -6,7 +6,7 @@ Er uppgift är att göra kattsidan responsiv. Lägg även till valfria visuella 
 
 ## Demo
 
-[https://chas-responsive.vercel.app/](https://chas-responsive.vercel.app/)
+[https://chas-responsive.vercel.app/](https://chas-responsive.vercel.app/){:target=”\_blank”}
 
 ## Används i detta projekt
 
